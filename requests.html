@@ -1,0 +1,400 @@
+<!DOCTYPE >
+<html lang="ar" dir="rtl">
+	<head>
+		<title>tamplate 3 using bootstrap</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- font-awesome library -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/slick.css" />
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+		<!-- my style -->
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<section class="container">
+				<div class="row header-row">
+					<div class="col-lg-4 col-6 text-right text-sm-center">
+						<span class="arabic">عربى</span>
+						<span class="eng">en</span>
+					</div>
+					<div class="col-lg-4 col-6 text-sm-center cen-div">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-whatsapp" aria-hidden="true"></i>
+					</div>
+					<div class="col-lg-4 col-12 text-left text-sm-center">
+						<div class="row ">
+							<div class="mail col-6">
+								<i class="fa fa-envelope-o" aria-hidden="true"
+									><span>name@name.com</span></i
+								>
+							</div>
+							<div class="phone-num col-6">
+								<i class="fa fa-volume-control-phone" aria-hidden="true"
+									><span>+111111111111</span></i
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</header>
+		<!-- ./header -->
+
+		<!-- start navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="#"
+					><img src="imgs/logo.png" alt="nav logo"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active" id="active">
+							<a class="nav-link px-xl-3 px-1 " href="index.html"
+								>الرئيسيه <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-xl-3 px-1 " href="#who-we">بنك الدم</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-xl-3 px-1 " href="#work">المقالات</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-xl-3 px-1 " href="requests.html"
+								>طلبات التبرع</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-xl-3 px-1 " href="whoAreWe.html">من نحن</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-xl-3 px-1 " href="contact.html">اتصل بنا</a>
+						</li>
+					</ul>
+					<div class="nav-side">
+						<a href="createNewAccount.html"> انشاء حساب جديد </a>
+						<button
+							type="button"
+							class="btn btn-primary"
+							onclick="window.location='enter.html'"
+						>
+							الدخول
+						</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- ./end navbar -->
+
+		<!-- request -->
+		<section class="request py-4 ">
+			<!-- breadcrumb -->
+			<section class="container">
+				<nav aria-label="breadcrumb ">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="index.html">الرئيسيه</a></li>
+						<li class="breadcrumb-item active" aria-current="page">
+							طلبات التبرع
+						</li>
+					</ol>
+				</nav>
+			</section>
+			<!-- ./breadcrumb -->
+			<div>
+				<h3>طلبات التبرع</h3>
+			</div>
+			<div class="container">
+				<div class="row justify-content-around">
+					<!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
+					<select class="col-4 sel1" name="blood">
+						<option value="volvo"> </option>
+						<option value="saab">Saab</option>
+						<option value="fiat">Fiat</option>
+						<option value="audi">Audi</option>
+					</select>
+					<select class="col-4 sel2" name="city">
+						<option value="volvo"></option>
+						<option value="saab">Saab</option>
+						<option value="fiat">Fiat</option>
+						<option value="audi">Audi</option>
+					</select>
+					<div class="col-2">
+						<i class="fa fa-search " aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<!-- <div class="parent-det row">
+						<div class="par-con">
+							<p>+B</p>
+						</div>
+						<div class="col-11 row py-4">
+							<ul class="col">
+								<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+								<li><span>مستشفى : </span> القصر العينى</li>
+								<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+							</ul>
+							<button class="col btn btn-primary my-md-4 my-5" id="btn-1">التفاصيل</button>		
+						</div>
+					</div> -->
+
+				<style>
+					.info-req {
+						background-color: white;
+						padding: 20px 0;
+						border-bottom-right-radius: 105px;
+						border-top-right-radius: 105px;
+						/* padding: 50px 0; */
+						position: relative;
+					}
+					.info-req p {
+						border-radius: 50%;
+						background-color: rgb(251, 251, 251);
+						width: 90%;
+						height: 90%;
+						font-size: 82px;
+						font-weight: bold;
+						top: 10px;
+						right: 11px;
+						position: absolute;
+						padding: 0;
+					}
+					.info-req ul {
+						list-style: none;
+						text-align: right;
+						line-height: 2;
+						font-size: 19px;
+						/* padding-right: 140px; */
+						white-space: nowrap;
+					}
+					.info-req button {
+						border: 0;
+						background-color: rgb(45, 62, 80);
+						border-radius: 0;
+						height: 70px;
+						margin-top: 21px;
+						color: white;
+						font-size: 20px;
+					}
+
+					@media (max-width: 767px) {
+						.info-req {
+							border-bottom-right-radius: 129px;
+							border-top-right-radius: 123px;
+						}
+					}
+				</style>
+
+				<div class="row info-req justify-content-around my-5 ">
+					<p class="col-5 col-sm-5 col-md-3 col-lg-2">+B</p>
+					<div class="mr-auto col-7 col-sm-7 col-md-9 col-lg-10 justify-content-around row">
+						<ul class="col-12 col-md-9 text-right px-md-5">
+							<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+							<li><span>مستشفى : </span> القصر العينى</li>
+							<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+						</ul>
+						<button class="col-md-3 col-8 my-0 my-md-5">التفاصيل</button>
+					</div>
+				</div>
+
+				<div class="row info-req justify-content-around my-5 ">
+					<p class="col-5 col-sm-5 col-md-3 col-lg-2">+B</p>
+					<div class="mr-auto col-7 col-sm-7 col-md-9 col-lg-10 justify-content-around row">
+						<ul class="col-12 col-md-9 text-right px-md-5">
+							<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+							<li><span>مستشفى : </span> القصر العينى</li>
+							<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+						</ul>
+						<button class="col-md-3 col-8 my-0 my-md-5">التفاصيل</button>
+					</div>
+				</div>
+
+				<div class="row info-req justify-content-around my-5 ">
+					<p class="col-5 col-sm-5 col-md-3 col-lg-2">+B</p>
+					<div class="mr-auto col-7 col-sm-7 col-md-9 col-lg-10 justify-content-around row">
+						<ul class="col-12 col-md-9 text-right px-md-5">
+							<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+							<li><span>مستشفى : </span> القصر العينى</li>
+							<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+						</ul>
+						<button class="col-md-3 col-8 my-0 my-md-5">التفاصيل</button>
+					</div>
+				</div>
+
+				<div class="row info-req justify-content-around my-5 ">
+					<p class="col-5 col-sm-5 col-md-3 col-lg-2">+B</p>
+					<div class="mr-auto col-7 col-sm-7 col-md-9 col-lg-10 justify-content-around row">
+						<ul class="col-12 col-md-9 text-right px-md-5">
+							<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+							<li><span>مستشفى : </span> القصر العينى</li>
+							<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+						</ul>
+						<button class="col-md-3 col-8 my-0 my-md-5">التفاصيل</button>
+					</div>
+				</div>
+
+				<div class="row info-req justify-content-around my-5 ">
+					<p class="col-5 col-sm-5 col-md-3 col-lg-2">+B</p>
+					<div class="mr-auto col-7 col-sm-7 col-md-9 col-lg-10 justify-content-around row">
+						<ul class="col-12 col-md-9 text-right px-md-5">
+							<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+							<li><span>مستشفى : </span> القصر العينى</li>
+							<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+						</ul>
+						<button class="col-md-3 col-8 my-0 my-md-5">التفاصيل</button>
+					</div>
+				</div>
+
+				<div class="row info-req justify-content-around my-5 ">
+					<p class="col-5 col-sm-5 col-md-3 col-lg-2">+B</p>
+					<div class="mr-auto col-7 col-sm-7 col-md-9 col-lg-10 justify-content-around row">
+						<ul class="col-12 col-md-9 text-right px-md-5">
+							<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+							<li><span>مستشفى : </span> القصر العينى</li>
+							<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+						</ul>
+						<button class="col-md-3 col-8 my-0 my-md-5">التفاصيل</button>
+					</div>
+				</div>
+
+				<div class="row info-req justify-content-around my-5 ">
+					<p class="col-5 col-sm-5 col-md-3 col-lg-2">+B</p>
+					<div class="mr-auto col-7 col-sm-7 col-md-9 col-lg-10 justify-content-around row">
+						<ul class="col-12 col-md-9 text-right px-md-5">
+							<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+							<li><span>مستشفى : </span> القصر العينى</li>
+							<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+						</ul>
+						<button class="col-md-3 col-8 my-0 my-md-5">التفاصيل</button>
+					</div>
+				</div>
+
+				<div class="row info-req justify-content-around my-5 ">
+					<p class="col-5 col-sm-5 col-md-3 col-lg-2">+B</p>
+					<div class="mr-auto col-7 col-sm-7 col-md-9 col-lg-10 justify-content-around row">
+						<ul class="col-12 col-md-9 text-right px-md-5">
+							<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+							<li><span>مستشفى : </span> القصر العينى</li>
+							<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+						</ul>
+						<button class="col-md-3 col-8 my-0 my-md-5">التفاصيل</button>
+					</div>
+				</div>
+
+				<div class="row info-req justify-content-around my-5 ">
+					<p class="col-5 col-sm-5 col-md-3 col-lg-2">+B</p>
+					<div class="mr-auto col-7 col-sm-7 col-md-9 col-lg-10 justify-content-around row">
+						<ul class="col-12 col-md-9 text-right px-md-5">
+							<li><span>اسم الحاله : </span> احمد محمد احمد</li>
+							<li><span>مستشفى : </span> القصر العينى</li>
+							<li><span>المدينه &nbsp;&nbsp; : </span> المنصوره</li>
+						</ul>
+						<button class="col-md-3 col-8 my-0 my-md-5">التفاصيل</button>
+					</div>
+				</div>
+
+				<nav aria-label="Page navigation example " style="margin-right: 45%;">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#">1</a></li>
+						<li class="page-item"><a class="page-link" href="#">2</a></li>
+						<li class="page-item"><a class="page-link" href="#">3</a></li>
+						<li class="page-item">
+							<a class="page-link" href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<!-- ./request -->
+
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<img src="imgs/logo.png" />
+						<h3>بنك الدم</h3>
+						<p>
+							انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس
+							نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات
+						</p>
+					</div>
+					<div class="col-md-4 col-12 text-center">
+						<h4>الرئيسيه</h4>
+						<div class="footer-list">
+							<ul>
+								<li>عن بنك الدم</li>
+								<li>المقالات</li>
+								<li>طلبات التبرع</li>
+								<li>من نحن</li>
+								<li>اتصل بنا</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<h4 class="mb-5">متوفر على</h4>
+						<div><img src="imgs/google1.png" class="my-3 mx-3" /></div>
+						<div><img src="imgs/ios1.png" class="my-3 mx-3" /></div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<section class="copy-right py-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 text-right">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-whatsapp" aria-hidden="true"></i>
+					</div>
+					<div class="col-8 text-right">
+						جميع الحقوق محفوظه ل <span>بنك الدم </span> &copy; 2019
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- ./footer -->
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>

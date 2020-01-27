@@ -1,0 +1,224 @@
+<!DOCTYPE >
+<html lang="ar" dir="rtl">
+	<head>
+		<title>tamplate 3 using bootstrap</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+		<!-- fonts -->
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet"/>
+		<!-- font-awesome library -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+		<!-- my style -->
+		<link rel="stylesheet" href="css/style.css" />
+		<style>
+			body{
+				background-color: rgb(251,251,251);
+			}
+			.breadcrumb{
+				background-color: white;
+   				border: 2px solid #e9e9e9a6;
+			}
+			.breadcrumb a{
+				text-decoration: none;
+				background-color: transparent;
+				color: #c2c2c2d4;
+				font-size: 19px;
+			}
+			.breadcrumb-item+.breadcrumb-item::before {
+				padding-left: 12px;
+			}
+			.breadcrumb-item.active {
+				font-size: 19px;
+				padding-right: 3px;
+			}
+
+			form{
+				background-color: white;
+				border: 2px solid #e9e9e9a6;	
+				padding: 5%;
+				text-align: center;
+			}
+			input ,select{
+				background-color: rgb(251,251,251);
+			    border: 2px solid #e9e9e9a6;
+				flex-wrap: wrap;
+				padding: .75rem 1rem;
+				margin-bottom: 1rem;
+				border-radius: .25rem;		
+			}
+			.submit{
+				color: white;
+				font-size: 30px;
+				background-color: rgb(58,181,74);
+			}
+		</style>
+
+
+	</head>
+	<body>
+		<!-- header -->
+		<header>
+			<section class="container">
+				<div class="row header-row">
+					<div class="col-lg-4 col-6 text-right text-sm-center">
+						<span class="arabic">عربى</span>
+						<span class="eng">en</span>
+					</div>
+					<div class="col-lg-4 col-6 text-sm-center cen-div">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-whatsapp" aria-hidden="true"></i>
+					</div>
+					<div class="col-lg-4 col-12 text-left text-sm-center">
+						<div class="row "> 
+							<div class="mail col-6">
+								<i class="fa fa-envelope-o" aria-hidden="true"><span>name@name.com</span></i>
+							</div>
+							<div class="phone-num col-6">
+								<i class="fa fa-volume-control-phone" aria-hidden="true"><span>+111111111111</span></i>
+							</div>
+						</div> 
+					</div>
+				</div>
+				
+			</section>
+		</header>
+		<!-- ./header -->
+
+		<!-- start navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="#"><img src="imgs/logo.png" alt="nav logo"/></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active" id="active">
+						<a class="nav-link px-xl-3 px-1 " href="index.html">الرئيسيه <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link px-xl-3 px-1 " href="#who-we">بنك الدم</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link px-xl-3 px-1 " href="#work">المقالات</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link px-xl-3 px-1 " href="requests.html" >طلبات التبرع</a>
+						</li>
+						<li class="nav-item">
+						<a class="nav-link px-xl-3 px-1 " href="whoAreWe.html" >من نحن</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link px-xl-3 px-1 " href="contact.html">اتصل بنا</a>
+						</li>
+					</ul>
+					<div class="nav-side">
+						<a href="createNewAccount.html"> انشاء حساب جديد  </a>
+						<button type="button" class="btn btn-primary" onclick="window.location='enter.html'">  الدخول</button>
+					</div>
+				  </div>
+				</div>
+		</nav>
+		<!-- ./end navbar -->
+		<!-- breadcrumb -->
+		<section class="container">
+			<nav aria-label="breadcrumb ">
+				<ol class="breadcrumb">
+				  <li class="breadcrumb-item"><a href="index.html">الرئيسيه</a></li>
+				  <li class="breadcrumb-item active" aria-current="page">انشاء حساب جديد</li>
+				</ol>
+			  </nav>
+		
+		<!-- ./breadcrumb -->
+
+		<form>
+			<input class="col-12" type="text" placeholder="الاسم">
+			<input class="col-12" type="email" placeholder="البريد الالكترونى">
+			<input class="col-12" type="date" placeholder="تاريخ الميلاد">
+			<input class="col-12" type="text" placeholder="فصيله الدم">
+			<select class="col-12" name="government">
+				<option value="المحافظه">المحافظه</option>
+				<option value="saab">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			  </select>
+			  <select class="col-12" name="city">
+				<option value="المدينه" aria-placeholder="المدينه">المدينه</option>
+				<option value="saab">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			  </select>
+			<input class="col-12" type="tel" placeholder="رقم الهاتف">
+			<input class="col-12" type="date" placeholder="اخر تاريخ للتبرع">
+			<input class="col-12" type="password" placeholder="كلمه المرور">
+			<input class="col-12" type="password" placeholder="تأكيد كلمه المرور">
+			<input class="col-6 text-center submit" type="submit" value="انشاء" class="px-5">
+
+		</form>
+	</section>
+
+	
+		<!-- footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-12">
+						<img src="imgs/logo.png">
+						<h3>بنك الدم</h3>
+						<p> انيم أد مينيم فينايم,كيواس نوستريد أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات</p>
+						
+					</div>
+					<div class="col-md-4 col-12 text-center">
+						<h4>الرئيسيه</h4>
+						<div class="footer-list">
+							<ul>
+								<li>عن بنك الدم</li>
+								<li>المقالات</li>
+								<li>طلبات التبرع</li>
+								<li>من نحن</li>
+								<li>اتصل بنا</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4 col-12">
+						<h4 class="mb-5">متوفر على</h4>
+						<div><img src="imgs/google1.png" class="my-3 mx-3"></div>
+						<div><img src="imgs/ios1.png" class="my-3 mx-3"></div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<section class="copy-right py-3">
+			<div class="container">
+				<div class="row">
+					<div class="col-4 text-right">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-instagram" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-whatsapp" aria-hidden="true"></i>
+					</div>
+					<div class="col-8 text-right">
+						جميع الحقوق محفوظه ل <span>بنك الدم </span> &copy; 2019
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- ./footer -->
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    	<script src="js/slick.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
